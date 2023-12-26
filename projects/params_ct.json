@@ -1,0 +1,18 @@
+{
+  "CT_MODE": {
+    "parallel": 0,
+    "fan_spaced": 1,
+    "fan_angular": 2
+  },
+  "BEAM_MODE": {
+    "full": 0,
+    "half": 1
+  },
+  "FILTER_MODE": {
+    "ram_lak": 0,
+    "shepp_logan": 1,
+    "cosine": 2,
+    "hamming": 3,
+    "hann": 4
+  }
+}

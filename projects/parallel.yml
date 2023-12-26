@@ -1,0 +1,55 @@
+#CT_MODE = {'parallel': 0, 'fan_spaced': 1, 'fan_angular': 2}
+#BEAM_MODE = {'full': 0, 'half': 1}
+#FILTER_MODE = {'ram_lak': 0, 'shepp_logan': 1, 'cosine': 2, 'hamming': 3, 'hann': 4}
+
+
+CT_NAME: 'parallel'
+CT_MODE: 0
+FILTER_NAME: 'ram_lak'
+FILTER_MODE: 0
+FILTER_TYPE: 'ft'
+CUTOFF: 1.0
+
+dDSO: 800
+dDSD: 1200
+
+nDctX: 768
+nDctY: 1
+
+dDctX: 1.0
+dDctY: 1.0
+
+dOffsetDctX: 0
+dOffsetDctY: 0
+
+nImgX: 512
+nImgY: 512
+nImgZ: 1
+
+dImgX: 1.0
+dImgY: 1.0
+dImgZ: 1.0
+
+#nView: 1024
+nView: 768
+
+
+threshold: 0.001
+
+num_train: 3990
+num_valid: 252
+
+scope_data: ''
+
+noise_range:
+  - 4
+  - 8
+
+downsample_range:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 6
+  - 8
+  - 12
