@@ -1,4 +1,4 @@
-# Enhanced Sparse-View CT Reconstruction with Projection-Domain DL: Leveraging Hierarchical Measurement Decomposition and Fourier Constraints
+# Hierarchical Decomposed Projection-domain Deep Learning for Sparse-View CT Reconstruction
 
 ## Requirements
 ___PLEASE INSTALL !!! DOCKER !!! TO CREATE CONTAINER.___
@@ -71,7 +71,7 @@ ___YOU MUST PREPARE THE DATASET.___
 
 ## Train and Test the model
 ### Train mode
-1. Image-domain W-Net trained at decomposition level 1 (*decomposition level 1 is equal to nstage=0)
+1. II-Net trained at decomposition level 1 (*decomposition level 1 is equal to nstage=0)
    ```python
    python main_for_img2img.py \
          --scope ct_img2img \
@@ -84,7 +84,7 @@ ___YOU MUST PREPARE THE DATASET.___
          --lr_type_img residual \
    ```
 
-2. Image-domain W-Net trained at decomposition level [N] (*decomposition level [N] is equal to nstage=[N-1])
+2. II-Net trained at decomposition level [N] (*decomposition level [N] is equal to nstage=[N-1])
      ```python
      python main_for_img2img.py \
            --scope ct_img2img \
@@ -97,7 +97,7 @@ ___YOU MUST PREPARE THE DATASET.___
            --lr_type_img residual \
      ```
 
-3. Dual-domain D-Net trained at decomposition level 1 (*decomposition level 1 is equal to nstage=0)
+3. PI-Net trained at decomposition level 1 (*decomposition level 1 is equal to nstage=0)
      ```python
      python main_for_prj2img.py \
            --scope ct_prj2img \
@@ -110,7 +110,7 @@ ___YOU MUST PREPARE THE DATASET.___
            --lr_type_prj consistency \
      ```
 
-4. Dual-domain D-Net trained at decomposition level [N] (*decomposition level [N] is equal to nstage=[N-1])
+4. PI-Net trained at decomposition level [N] (*decomposition level [N] is equal to nstage=[N-1])
     ```python
     python main_for_prj2img.py \
            --scope ct_prj2img \
@@ -124,7 +124,7 @@ ___YOU MUST PREPARE THE DATASET.___
     ```
 
 ### Test mode
-1. Image-domain W-Net trained at decomposition level [N] (*decomposition level [N] is equal to nstage=[N-1])
+1. II-Net trained at decomposition level [N] (*decomposition level [N] is equal to nstage=[N-1])
  ```python
  python main_for_img2img.py \
        --scope ct_img2img \
@@ -136,7 +136,7 @@ ___YOU MUST PREPARE THE DATASET.___
        --lr_type_img residual \
  ```
 
-2. Dual-domain D-Net trained at decomposition level [N] (*decomposition level [N] is equal to nstage=[N-1])
+2. PI-Net trained at decomposition level [N] (*decomposition level [N] is equal to nstage=[N-1])
     ```python
     python main_for_prj2img.py \
            --scope ct_prj2img \
