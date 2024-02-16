@@ -19,7 +19,7 @@ https://docs.docker.com/engine/install/ubuntu/
 
    ex) 
    ```
-   docker run -it -v ./projection-domain-network-with-measurement-decomposition:/workspace/projection-domain-network-with-measurement-decomposition --gpus all --name mpi pytorch/pytorch:1.11.0-cuda11.3-cudnn8-devel /bin/bash
+   docker run -it -v ./HDD-DL-for-SVCT.:/workspace/HDD-DL-for-SVCT. --gpus all --name mpi pytorch/pytorch:1.11.0-cuda11.3-cudnn8-devel /bin/bash
    ```
 
 3. Install basic libraries
@@ -33,7 +33,7 @@ https://docs.docker.com/engine/install/ubuntu/
 
 4. Move to the repository
    ```
-   cd projection-domain-network-with-measurement-decomposition
+   cd HDD-DL-for-SVCT.
    ```
 
 5. Install the requirements
