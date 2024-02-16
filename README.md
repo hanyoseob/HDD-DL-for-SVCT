@@ -1,4 +1,4 @@
-# Hierarchical Decomposed Projection-domain Deep Learning for Sparse-View CT Reconstruction
+# Hierarchical Decomposed Dual-domain Deep Learning for Sparse-View CT Reconstruction
 
 ## Requirements
 ___PLEASE INSTALL !!! DOCKER !!! TO CREATE CONTAINER.___
@@ -9,7 +9,7 @@ https://docs.docker.com/engine/install/ubuntu/
 
 1. Clone this repository
    ```
-   git clone git@github.com:anonymous-author-s/projection-domain-network-with-measurement-decomposition.git
+   git clone git@github.com:hanyoseob/HDD-DL-for-SVCT.git
    ```
 
 2. Create, Start, and Run Docker Container
