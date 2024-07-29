@@ -1,5 +1,5 @@
 # Hierarchical Decomposed Dual-domain Deep Learning for Sparse-View CT Reconstruction 
-Implementation of <a href="https://arxiv.org/abs/2006.11239](https://pubmed.ncbi.nlm.nih.gov/38457843/">Hierarchical Decomposed Dual-domain Deep Learning for Sparse-View CT Reconstruction </a> in Pytorch.
+Implementation of <a href="https://pubmed.ncbi.nlm.nih.gov/38457843/">Hierarchical Decomposed Dual-domain Deep Learning for Sparse-View CT Reconstruction </a> in Pytorch.
 
 ## Requirements
 ___PLEASE INSTALL !!! DOCKER !!! TO CREATE CONTAINER.___
